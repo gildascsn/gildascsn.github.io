@@ -1,7 +1,31 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World<h1>
-<p>I'm hosted with Github Pages.</p>
-</body>
+<html lang=en-us>
+    <head>
+        <meta charset=utf-8>
+        <title> an UTSEUS flashcard app </title>
+        <script src="stylesheet" href=mystyle.css" />
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+        <div id="chinese">chinese goes here</div>
+        <div id="pinyin" class="hidden" onclick="reveal('pinyin')">reveal
+        </div>
+        <div id=english" class="hidden" onclick="reveal('english')">
+        reveal</div>
+        <input type="button" value="try me" onclick="tryme()"/>
+    </body>
 </html>
+
+var i=0
+
+function tryme() {
+     i = Math.floor(Math.random() * data.length);
+    document.getElementBy.Id("chinese").innerHTML=data[i]['chinese'];
+    document.getElementBy.Id("english").innerHTML="reveal";
+    document.getElementBy.Id("pinyin").innerHTML="reveal";
+}
+
+function reveal (mydiv) {
+    document.getElementBy.Id(mydiv).innerHTML==data[i][mydiv];
+}
+#{"english}
